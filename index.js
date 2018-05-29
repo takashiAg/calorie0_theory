@@ -35,7 +35,7 @@ class Food {
     }
 
     calc_calorie() {
-        if (this.hole) {
+        if (this.Hole) {
             this.reason = "ドーナツは真ん中が 空洞だし、形がカロリーゼロを表してるから太らない"
             return 0
         }
@@ -59,6 +59,7 @@ class Food {
             this.reason = "小さくすればカロリーなんてあるわけない"
             return 0
         }
+        this.reason = "カロリーなんてものはない"
         return this.Calorie_raw
     }
 
@@ -67,7 +68,7 @@ class Food {
 class Donut extends Food {
     constructor(calorie) {
         super(calorie)
-        this.hole = true;
+        this.Hole = true;
     }
 
 }
@@ -80,8 +81,23 @@ class Ramen extends Food {
 }
 
 class Castela extends Food {
-    constructor(calorie, Smashed) {
+    constructor(calorie) {
         super(calorie);
-        this.Smashed = Smashed;
+        this.Smashed = true;
     }
+}
+
+class Icecream extends Food {
+    constructor(calorie) {
+        super(calorie);
+        this.Temperature = -1;
+    }
+}
+
+class Nikuman extends Food {
+    constructor(calorie) {
+        super(calorie);
+        this.Color = "White";
+    }
+
 }
