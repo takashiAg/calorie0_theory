@@ -24,7 +24,7 @@ let [real_calorie,reason]=icecream.calorie
 
 ## Install
 ```$xslt
-<script type="text/javascript" src="https://cdn.rawgit.com/takashiAg/calc_calorie/c1706a8c/index.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/takashiAg/calc_calorie/a2f47d39/index.js"></script>
 ```
 
 ## Licence
